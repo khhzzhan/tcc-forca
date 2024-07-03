@@ -81,7 +81,7 @@ function comparalistas(letra){
         carregaImagemForca();
 
         if(tentativas == 0){
-            abreModal("OPS!", "Não foi dessa vez ... A palavra secreta era <br>" + palavraSecretaSorteada);
+            abreModal("OPS!", "Não foi dessa vez ... Tente novamente");
             piscarBotaoJogarNovamente(true);
         }
     }
@@ -103,7 +103,7 @@ function comparalistas(letra){
 
     if(vitoria == true)
     {
-        abreModal("PARABÉNS!", "Você venceu...");
+        abreModal("PARABÉNS!", "VOCÊ ACERTOU A PALAVRA ✨...");
         tentativas = 0;
         piscarBotaoJogarNovamente(true);
     }
@@ -212,248 +212,72 @@ window.onclick = function(){
 function carregaListaAutomatica(){
     palavras = [
         palavra001 = {
-            nome: "IRLANDA",
-            categoria:"LUGARES"
+            nome: "GALAXIA",
+            categoria:"UM VASTO SISTEMA DE POEIRAS ESTRELAS E GÁS"
         },
         palavra002 = {
-            nome: "EQUADOR",
-            categoria:"LUGARES"
+            nome: "ESTRELA",
+            categoria:"UM CORPO CELESTE LUMINOSO QUE BRILHA POR CAUSA DE REAÇÕES NUCLEARES EM SEU NÚCLEO."
         },
         palavra003 = {
-            nome: "CHILE",
-            categoria:"LUGARES"
+            nome: "PLANETA",
+            categoria:"UM CORPO CELESTE QUE ORBITA UMA ESTRELA E NÃO BRILHA POR LUZ PRÓPRIA."
         },
         palavra004 = {
-            nome: "INDONESIA",
-            categoria:"LUGARES"
+            nome: "LUA",
+            categoria:"SATÉLITE NATURAL DE UM PLANETA."
         },
         palavra005 = {
-            nome: "MALDIVAS",
-            categoria:"LUGARES"
+            nome: "ASTEROIDE",
+            categoria:"PEQUENO CORPO ROCHOSO QUE ORBITA O SOL."
         },
         palavra006 = {
-            nome: "INGLATERRA",
-            categoria:"LUGARES"
+            nome: "NEBULOSA",
+            categoria:"NUVEM DE GÁS E POEIRA NO ESPAÇO, MUITAS VEZES UM BERÇO DE NOVAS ESTRELAS."
         },
         palavra007 = {
-            nome: "GROELANDIA",
-            categoria:"LUGARES"
+            nome: "BURACO NEGRO",
+            categoria:"REGIÃO DO ESPAÇO ONDE A GRAVIDADE É TÃO FORTE QUE NADA PODE ESCAPAR DELA, NEM MESMO A LUZ."
         },
         palavra008 = {
-            nome: "UZBEQUISTAO",
-            categoria:"LUGARES"
+            nome: "SUPERNOVA",
+            categoria:" EXPLOSÃO BRILHANTE DE UMA ESTRELA MORIBUNDA."
         },
         palavra009 = {
-            nome: "INDONESIA",
-            categoria:"LUGARES"
+            nome: "CONSTELACAO",
+            categoria:"GRUPO DE ESTRELAS QUE FORMAM UM PADRÃO IMAGINÁRIO NO CÉU."
         },
         palavra010 = {
-            nome: "CREGUENHEM",
-            categoria:"LUGARES"
+            nome: "ECLIPSE",
+            categoria:"EVENTO ASTRONÔMICO ONDE UM CORPO CELESTE PASSA NA SOMBRA DE OUTRO."
         },
         palavra011 = {
-            nome: "BICICLETA",
-            categoria:"TRANSPORTE"
+            nome: "QUASAR",
+            categoria:"OBJETO MUITO LUMINOSO E DISTANTE, ACREDITA-SE QUE SEJA O NÚCLEO DE UMA GALÁXIA JOVEM."
         },
         palavra012 = {
-            nome: "LANCHA",
-            categoria:"TRANSPORTE"
+            nome: "METEORO",
+            categoria:"QUANDO UM FRAGMENTO DE ROCHA OU METAL ENTRA NA ATMOSFERA DA TERRA E BRILHA."
         },
         palavra013 = {
-            nome: "NAVIO",
-            categoria:"TRANSPORTE"
+            nome: "EXOPLANETA",
+            categoria:"PLANETA QUE ORBITA UMA ESTRELA FORA DO NOSSO SISTEMA SOLAR."
         },
         palavra014 = {
-            nome: "TELEFERICO",
-            categoria:"TRANSPORTE"
+            nome: "VIA LACTEA",
+            categoria:"GALÁXIA QUE CONTÉM NOSSO SISTEMA SOLAR."
         },
         palavra015 = {
-            nome: "MOTOCICLETA",
-            categoria:"TRANSPORTE"
+            nome: "SOL",
+            categoria:"A ESTRELA NO CENTRO DO NOSSO SISTEMA SOLAR."
         },
         palavra016 = {
-            nome: "BARCO",
-            categoria:"TRANSPORTE"
+            nome: "GRAVIDADE",
+            categoria:" FORÇA QUE ATRAI CORPOS PARA O CENTRO DA TERRA OU PARA OUTRO CORPO CELESTE."
         },
         palavra017 = {
-            nome: "AERONAVE",
+            nome: "TELESCOPIO",
             categoria:"TRANSPORTE"
-        },
-        palavra018 = {
-            nome: "TREM",
-            categoria:"TRANSPORTE"
-        },
-        palavra019 = {
-            nome: "CAIAQUE",
-            categoria:"TRANSPORTE"
-        },
-        palavra020 = {
-            nome: "FUNICULAR",
-            categoria:"TRANSPORTE"
-        },
-        palavra021 = {
-            nome: "XICARA",
-            categoria:"OBJETOS"
-        },
-        palavra022 = {
-            nome: "MOEDA",
-            categoria:"OBJETOS"
-        },
-        palavra023 = {
-            nome: "ESPARADRAPO",
-            categoria:"OBJETOS"
-        },
-        palavra024 = {
-            nome: "SINO",
-            categoria:"OBJETOS"
-        },
-        palavra025 = {
-            nome: "CHUVEIRO",
-            categoria:"OBJETOS"
-        },
-        palavra026 = {
-            nome: "TAMBORETE",
-            categoria:"OBJETOS"
-        },
-        palavra027 = {
-            nome: "LAMPADA",
-            categoria:"OBJETOS"
-        },
-        palavra028 = {
-            nome: "BOCAL",
-            categoria:"OBJETOS"
-        },
-        palavra029 = {
-            nome: "CORTINA",
-            categoria:"OBJETOS"
-        },
-        palavra030 = {
-            nome: "LAPIS",
-            categoria:"OBJETOS"
-        },
-        palavra031 = {
-            nome: "MELANCIA",
-            categoria:"ALIMENTOS"
-        },
-        palavra032 = {
-            nome: "AMENDOIM",
-            categoria:"ALIMENTOS"
-        },
-        palavra033 = {
-            nome: "ESFIRRA",
-            categoria:"ALIMENTOS"
-        },
-        palavra034 = {
-            nome: "GOROROBA",
-            categoria:"ALIMENTOS"
-        },
-        palavra035 = {
-            nome: "JANTAR",
-            categoria:"ALIMENTOS"
-        },
-        palavra036 = {
-            nome: "SABOROSO",
-            categoria:"ALIMENTOS"
-        },
-        palavra037 = {
-            nome: "DESJEJUM",
-            categoria:"ALIMENTOS"
-        },
-        palavra038 = {
-            nome: "MASTIGAR",
-            categoria:"ALIMENTOS"
-        },
-        palavra039 = {
-            nome: "ENGOLIR",
-            categoria:"ALIMENTOS"
-        },
-        palavra040 = {
-            nome: "DOCERIA",
-            categoria:"ALIMENTOS"
-        },
-        palavra040 = {
-            nome: "DRAGAO",
-            categoria:"ANIMAIS"
-        },
-        palavra041 = {
-            nome: "GALINHA",
-            categoria:"ANIMAIS"
-        },
-        palavra042 = {
-            nome: "PAVAO",
-            categoria:"ANIMAIS"
-        },
-        palavra043 = {
-            nome: "CAMELO",
-            categoria:"ANIMAIS"
-        },
-        palavra044 = {
-            nome: "PERU",
-            categoria:"ANIMAIS"
-        },
-        palavra045 = {
-            nome: "ZEBRA",
-            categoria:"ANIMAIS"
-        },
-        palavra046 = {
-            nome: "DROMEDARIO",
-            categoria:"ANIMAIS"
-        },
-        palavra047 = {
-            nome: "CALANGO",
-            categoria:"ANIMAIS"
-        },
-        palavra048 = {
-            nome: "SAGUI",
-            categoria:"ANIMAIS"
-        },
-        palavra049 = {
-            nome: "LAGARTIXA",
-            categoria:"ANIMAIS"
-        },
-        palavra050 = {
-            nome: "HIPOPOTAMO",
-            categoria:"ANIMAIS"
-        },
-        palavra051 = {
-            nome: "A ERA DO GELO",
-            categoria:"TV E CINEMA"
-        },
-        palavra052 = {
-            nome: "HOMEM ARANHA",
-            categoria:"TV E CINEMA"
-        },
-        palavra053 = {
-            nome: "CASA MONSTRO",
-            categoria:"TV E CINEMA"
-        },
-        palavra054 = {
-            nome: "TELA QUENTE",
-            categoria:"TV E CINEMA"
-        },
-        palavra055 = {
-            nome: "STRANGER THINGS",
-            categoria:"TV E CINEMA"
-        },
-        palavra056 = {
-            nome: "O REI DO GADO",
-            categoria:"TV E CINEMA"
-        },
-        palavra057 = {
-            nome: "MULHER MARAVILHA",
-            categoria:"TV E CINEMA"
-        },
-        palavra058 = {
-            nome: "O INCRIVEL HULK",
-            categoria:"TV E CINEMA"
-        },
-        palavra059 = {
-            nome: "BOB ESPONJA",
-            categoria:"TV E CINEMA"
-        },
-        palavra060 = {
-            nome: "PANICO NA TV",
-            categoria:"TV E CINEMA"
         }
     ];
 }
