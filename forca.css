@@ -6,11 +6,10 @@
 }
 
 body{
-    width: 100vw;
-    height: 90vh;
-    margin-top: 10px;
-    background-color: rgb(60, 32, 218);
-    font-family: "Poppins", sans-serif;
+    background-image: url("/img/fundo01.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container{
@@ -22,7 +21,7 @@ body{
 }
 
 #imagem{
-    background-image: url("/forca\ astronauta.png");
+    background-image: url("/img/forca\ astronauta.png");
     width: 234px;
     height: 272px;
     background-repeat: no-repeat;
@@ -39,7 +38,7 @@ body{
 .letras{
     width: 16px;
     text-align: center;
-    border-bottom: 2px solid #8b008b;
+    border-bottom: 2px solid #ffffff;
     color: #ffffff;
     padding: 2px;
     margin-left: 2px;
@@ -68,7 +67,7 @@ body{
     box-shadow:  0px 2px 8px dimgray;
     border-radius: 5px;
     border: 1px solid dimgrey;  
-    color: #3c56e7;
+    color: rgb(88, 95, 190);
     font-family: "Poppins", sans-serif;
     font-weight: 900;
 }
@@ -83,7 +82,7 @@ body{
 
 #categoria{
     margin-top: 30px;
-    color: #8b008b;
+    color: #ffffff;
     font-size: 1.2em;
 }
 
@@ -96,7 +95,7 @@ body{
     border-radius: 70px;
     font-size: 3em;
     background-color: transparent;
-    color: #000;
+    color: #ffffff;
     cursor: pointer;
 }
 
